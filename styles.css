@@ -28,7 +28,7 @@ h1 {
     font-family: 'Limelight', cursive;
     font-size: 70px;
     position: relative;
-    margin-bottom: 90px
+    margin-bottom: 50px
 }
 
 
@@ -107,7 +107,6 @@ li {
 
 .playAgain {
     display: none;
-    margin-top: -20px
 }
 
 
@@ -133,7 +132,6 @@ li {
     border: 2px solid rgb(163, 151, 119);
     border-radius: 30px;
     padding: 15px;
-    margin-top: -40px;
     margin-bottom: 40px
 }
 
@@ -157,7 +155,7 @@ li {
     font-family: 'Parisienne', cursive;
     color: rgb(133, 107, 36);
     font-size: 60px;
-    margin-top: -5px
+    margin-top: 20px
 }
 
 
