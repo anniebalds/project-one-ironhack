@@ -106,7 +106,8 @@ li {
 }
 
 .playAgain {
-    display: none
+    display: none;
+    margin-top: -20px
 }
 
 
@@ -147,6 +148,7 @@ li {
     display: none;
     border: 10px rgb(133, 107, 36);
     border-style: double;
+    margin-top: -25px
 }
 
 .winner {
@@ -154,7 +156,8 @@ li {
     text-align: center;
     font-family: 'Parisienne', cursive;
     color: rgb(133, 107, 36);
-    font-size: 60px
+    font-size: 60px;
+    margin-top: -5px
 }
 
 
@@ -170,7 +173,7 @@ li {
     display: none;
     border: 10px rgb(133, 107, 36);
     border-style: double;
-    margin: 70px
+    margin: 40px
 }
 
 
