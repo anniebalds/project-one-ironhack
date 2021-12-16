@@ -86,6 +86,7 @@ const playAgainButton = document.querySelector('.playAgain')
 const higherButton = document.querySelector('.higher');
 const lowerButton = document.querySelector('.lower')
 let score = document.querySelector('.score')
+
 let scoreTitle = document.querySelector('.scoreTitle')
 const rightside = document.querySelector('.rightside')
 const winner = document.querySelector('.winner')
