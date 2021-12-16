@@ -104,7 +104,7 @@ function shuffle(array) {
 }
 
 function startGame() {
-    document.body.style.backgroundImage = "url('/oscar-pics/mainbackground.png')";
+    document.body.style.backgroundImage = "url('oscar-pics/mainbackground.png')";
     startButton.style.display = 'none';
     instruct.style.display = 'none';
     higherButton.style.display = 'block';
