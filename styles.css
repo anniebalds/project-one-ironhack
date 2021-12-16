@@ -145,7 +145,6 @@ li {
     display: none;
     border: 10px rgb(133, 107, 36);
     border-style: double;
-    margin-top: -25px
 }
 
 .winner {
@@ -170,7 +169,7 @@ li {
     display: none;
     border: 10px rgb(133, 107, 36);
     border-style: double;
-    margin: 40px
+    margin: 20px
 }
 
 
