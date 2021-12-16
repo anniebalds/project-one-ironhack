@@ -91,6 +91,8 @@ let scoreTitle = document.querySelector('.scoreTitle')
 const rightside = document.querySelector('.rightside')
 const winner = document.querySelector('.winner')
 const winnergiphy = document.querySelector('.winnergiphy')
+const losergiphy = document.querySelector('.losergiphy')
+let crowdsound = new Audio("mixkit-audience-light-applause-354.wav"); 
 
 let clonedArray = []
 
@@ -144,11 +146,11 @@ function newBox() {
 
 function correct() {
         score.innerHTML = Number(score.innerHTML) +1
-        if (score.innerHTML === '11') {playerWins()}
+        if (score.innerHTML === '11') {setTimeout(playerWins, 500)}
         else {newBox()}
 }
 
-function incorrect() {
+function playerLoses() {
     higherButton.style.display = 'none';
     lowerButton.style.display = 'none';
     box1.style.display = 'none';
@@ -157,8 +159,15 @@ function incorrect() {
     box1number.style.display = 'none';
     box2name.style.display = 'none';
     box2number.style.display = 'none';
-    scoreTitle.innerHTML = 'FINAL SCORE';
-    playAgainButton.style.display = 'block'
+    scoreTitle.style.display = 'none';
+    score.style.display = 'none';
+    playAgainButton.style.display = 'block';
+    losergiphy.style.display = 'block'
+}
+
+
+function incorrect() {
+    {setTimeout(playerLoses, 500)}
 }
 
 function playerWins() {
@@ -175,6 +184,7 @@ function playerWins() {
     scoreTitle.style.display = 'none';
     winnergiphy.style.display = 'block';
     winner.style.display = 'block';
+    crowdsound.play();
 }
 
 function playAgain() {
@@ -188,6 +198,7 @@ function playAgain() {
     score.innerHTML = 0;
     winner.style.display = 'none';
     winnergiphy.style.display = 'none';
+    losergiphy.style.display = 'none';
 
     const shuffled = shuffle(actors);
     box1name.style.display = 'block';
@@ -210,10 +221,10 @@ function playAgain() {
 }
 
 startButton.addEventListener('click', () => {
-    setTimeout(startGame, 400)})
+    setTimeout(startGame, 600)})
 
 playAgainButton.addEventListener('click', () => {
-    setTimeout(playAgain, 400)})
+    setTimeout(playAgain, 500)})
 
 higherButton.addEventListener('click', () => {
     if (Number(box2number.textContent) > Number(box1number.textContent)) {setTimeout(correct, 300)}

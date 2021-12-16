@@ -13,7 +13,15 @@
 </head>
 <body>
     
-    <h1>AND THE WINNER IS...</h1>
+    <div class="top">
+    <!-- SCORE -->
+    <div class="score-section">
+            <h2 class='scoreTitle'>Score</h2>
+            <p class="score">0</p>
+    </div>
+    <h1>AND THE WINNER IS...</h1>  
+    </div>
+
     
     <div class="startdiv">
     <h2 class="instruct">Which actor or actress has the highest number of Oscar nominations? Test your knowledge in this simple game of higher or lower! Compare the star on the right to the one on the left and if you make it to 11, you win!
@@ -22,11 +30,13 @@
     </div>
     
     <div class="playerwins">
-    <iframe class="winnergiphy" src="https://giphy.com/embed/26BGKHrjfTMZX4g9y" width="480" height="246" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-    <p class="winner">
-        You!<br>
-        Final Score: 11/11
-    </p>
+        <iframe class="winnergiphy" src="https://giphy.com/embed/26BGKHrjfTMZX4g9y" width="480" height="246" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+        <p class="winner">Congratulations!</p>
+    </div>
+
+    <div class="playerloses">
+    <iframe class="losergiphy" src="https://giphy.com/embed/3ornk6AAnb9wZk758k" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
     </div>
 
     <a class="playAgain">PLAY AGAIN</a>
@@ -50,18 +60,16 @@
         </div>
     </div>
 
-    <div class="rightside">
-    <!-- SCORE -->
-        <div class="score-section">
-            <h2 class='scoreTitle'>Score</h2>
-            <p class="score">0</p>
-        </div>
+    
+
+
+    
     <!-- BUTTONS -->
         <div class="buttons">
         <button class="button higher">HIGHER</button>
         <button class="button lower">LOWER</button>
         </div>
-    </div>
+    
     </section>
 
 </body>
