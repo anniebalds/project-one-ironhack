@@ -91,6 +91,13 @@ h1 {
     margin-left: 140px
 }
 
+.box1number {
+    font-size: 50px; 
+    color: rgb(199, 171, 109);
+    -webkit-text-stroke: 4px #755b14;
+}
+
+
 ul {
     display: flex;
     flex-direction: column;
@@ -106,13 +113,6 @@ li {
 
 .playAgain {
     display: none;
-}
-
-
-.box1number {
-    font-size: 50px; 
-    color: rgb(199, 171, 109);
-    -webkit-text-stroke: 4px #755b14;
 }
 
 .startdiv {
@@ -169,7 +169,11 @@ li {
     display: none;
     border: 10px rgb(133, 107, 36);
     border-style: double;
-    margin: 20px
+    margin: 10px
 }
 
-
+.losingscore {
+    display: none;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 40px;
+}

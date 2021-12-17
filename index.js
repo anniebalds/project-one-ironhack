@@ -84,17 +84,16 @@ const startButton = document.querySelector('.start');
 const instruct = document.querySelector('.instruct');
 const playAgainButton = document.querySelector('.playAgain')
 const higherButton = document.querySelector('.higher');
-const lowerButton = document.querySelector('.lower')
-let score = document.querySelector('.score')
-
-let scoreTitle = document.querySelector('.scoreTitle')
-const rightside = document.querySelector('.rightside')
-const winner = document.querySelector('.winner')
-const winnergiphy = document.querySelector('.winnergiphy')
-const losergiphy = document.querySelector('.losergiphy')
+const lowerButton = document.querySelector('.lower');
+let score = document.querySelector('.score');
+let scoreTitle = document.querySelector('.scoreTitle');
+const winner = document.querySelector('.winner');
+const winnergiphy = document.querySelector('.winnergiphy');
+const losergiphy = document.querySelector('.losergiphy');
+const losingscore = document.querySelector('.losingscore');
 let crowdsound = new Audio("mixkit-audience-light-applause-354.wav"); 
 
-let clonedArray = []
+let clonedArray = [];
 
 function shuffle(array) {
     let shuffled = array
@@ -150,6 +149,10 @@ function correct() {
         else {newBox()}
 }
 
+function incorrect() {
+    {setTimeout(playerLoses, 500)}
+}
+
 function playerLoses() {
     higherButton.style.display = 'none';
     lowerButton.style.display = 'none';
@@ -162,13 +165,11 @@ function playerLoses() {
     scoreTitle.style.display = 'none';
     score.style.display = 'none';
     playAgainButton.style.display = 'block';
-    losergiphy.style.display = 'block'
+    losergiphy.style.display = 'block';
+    losingscore.style.display = 'block';
+    losingscore.innerHTML = `Final score: ${score.innerHTML}/11`
 }
 
-
-function incorrect() {
-    {setTimeout(playerLoses, 500)}
-}
 
 function playerWins() {
     higherButton.style.display = 'none';
@@ -199,6 +200,7 @@ function playAgain() {
     winner.style.display = 'none';
     winnergiphy.style.display = 'none';
     losergiphy.style.display = 'none';
+    losingscore.style.display = 'none';
 
     const shuffled = shuffle(actors);
     box1name.style.display = 'block';
